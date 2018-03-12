@@ -12,7 +12,6 @@
 #import <CaptainHook/CaptainHook.h>
 #import <UIKit/UIKit.h>
 #import <Cycript/Cycript.h>
-//#import "FAMethodUtility.h"
 
 static __attribute__((constructor)) void entry(){
     NSLog(@"\n               🎉!!！congratulations!!！🎉\n👍----------------insert dylib success----------------👍");
@@ -25,32 +24,3 @@ static __attribute__((constructor)) void entry(){
 
     }];
 }
-
-
-CHDeclareClass(NSBundle)
-CHOptimizedMethod(0, self, NSString *, NSBundle, bundleIdentifier)
-{
-    NSLog(@"@@@ %@", self);
-    NSString *result = CHSuper(0, NSBundle, bundleIdentifier);
-    //    result = @"com.laiwang.DingTalk";
-    return result;
-}
-
-CHOptimizedMethod(0, self, NSDictionary *, NSBundle, infoDictionary)
-{
-    NSMutableDictionary *dic = CHSuper(0, NSBundle, infoDictionary).mutableCopy;
-    if ([self.description hasSuffix:@".app"]) {
-        NSLog(@"@@@ replace");
-        dic[@"CFBundleIdentifier"] = @"com.laiwang.DingTalk";
-    }
-
-    return dic;
-}
-
-CHConstructor{
-    CHLoadLateClass(NSBundle);
-    //    CHClassHook(0, NSBundle, bundleIdentifier);
-//    CHClassHook(0, NSBundle, infoDictionary);
-}
-
-

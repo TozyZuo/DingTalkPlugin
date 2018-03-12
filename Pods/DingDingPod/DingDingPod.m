@@ -204,7 +204,3 @@ CHConstructor{
     CHHook3(CMPedometer, queryPedometerDataFromDate, toDate, withHandler);
 }
 
-
-
-
-

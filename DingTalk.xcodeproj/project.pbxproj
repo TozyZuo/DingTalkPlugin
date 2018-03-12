@@ -21,8 +21,6 @@
 		BA97717820527C6F00FEC917 /* DDSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716820527C6F00FEC917 /* DDSwitchTableViewCell.m */; };
 		BA97717920527C6F00FEC917 /* DDViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716920527C6F00FEC917 /* DDViewController.h */; };
 		BA97717A20527C6F00FEC917 /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716A20527C6F00FEC917 /* DDViewController.m */; };
-		BA97718020528B1E00FEC917 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97717E20528B1D00FEC917 /* CTBlockDescription.h */; };
-		BA97718120528B1E00FEC917 /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97717F20528B1D00FEC917 /* CTBlockDescription.m */; };
 		BAF4E33D2048229400C12DF6 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF4E33C2048229400C12DF6 /* MethodTraceConfig.plist */; };
 		BAF4E3402048229400C12DF6 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = BAF4E33F2048229400C12DF6 /* put ipa or app here */; };
 		BAF4E3482048229400C12DF6 /* libDingTalkDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAF4E3472048229400C12DF6 /* libDingTalkDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -36,7 +34,6 @@
 		BAF4E3602048229400C12DF6 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E35F2048229400C12DF6 /* AntiAntiDebug.m */; };
 		BAF4E3632048229400C12DF6 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E3622048229400C12DF6 /* fishhook.c */; };
 		BAF4E3652048229400C12DF6 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4E3642048229400C12DF6 /* fishhook.h */; };
-		BAF4E3682048229400C12DF6 /* DingTalkDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E3672048229400C12DF6 /* DingTalkDylib.mm */; };
 		BAF4E36A2048229400C12DF6 /* DingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4E3692048229400C12DF6 /* DingTalkDylib.h */; };
 		BAF4E36C2048229400C12DF6 /* DingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E36B2048229400C12DF6 /* DingTalkDylib.m */; };
 /* End PBXBuildFile section */
@@ -80,8 +77,6 @@
 		BA97716920527C6F00FEC917 /* DDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
 		BA97716A20527C6F00FEC917 /* DDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
 		BA97717D2052877200FEC917 /* DDSettingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSettingHeader.h; sourceTree = "<group>"; };
-		BA97717E20528B1D00FEC917 /* CTBlockDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
-		BA97717F20528B1D00FEC917 /* CTBlockDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBlockDescription.m; sourceTree = "<group>"; };
 		BAF4E3392048229400C12DF6 /* DingTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF4E33C2048229400C12DF6 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
 		BAF4E33F2048229400C12DF6 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
@@ -98,8 +93,6 @@
 		BAF4E35F2048229400C12DF6 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
 		BAF4E3622048229400C12DF6 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
 		BAF4E3642048229400C12DF6 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
-		BAF4E3662048229400C12DF6 /* DingTalkDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DingTalkDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		BAF4E3672048229400C12DF6 /* DingTalkDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DingTalkDylib.mm; sourceTree = "<group>"; };
 		BAF4E3692048229400C12DF6 /* DingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingTalkDylib.h; sourceTree = "<group>"; };
 		BAF4E36B2048229400C12DF6 /* DingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingTalkDylib.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +121,6 @@
 		BA97710220526B3A00FEC917 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BA97717E20528B1D00FEC917 /* CTBlockDescription.h */,
-				BA97717F20528B1D00FEC917 /* CTBlockDescription.m */,
 				BA97715920527C6F00FEC917 /* DingDingPod */,
 			);
 			path = Pods;
@@ -232,8 +223,6 @@
 		BAF4E3522048229400C12DF6 /* DingTalkDylib */ = {
 			isa = PBXGroup;
 			children = (
-				BAF4E3662048229400C12DF6 /* DingTalkDylib.xm */,
-				BAF4E3672048229400C12DF6 /* DingTalkDylib.mm */,
 				BAF4E3692048229400C12DF6 /* DingTalkDylib.h */,
 				BAF4E36B2048229400C12DF6 /* DingTalkDylib.m */,
 				BAF4E3532048229400C12DF6 /* MethodTrace */,
@@ -294,7 +283,6 @@
 				BA97717720527C6F00FEC917 /* DDSwitchTableViewCell.h in Headers */,
 				BAF4E3552048229400C12DF6 /* ANYMethodLog.h in Headers */,
 				BAF4E3592048229400C12DF6 /* MethodTrace.h in Headers */,
-				BA97718020528B1E00FEC917 /* CTBlockDescription.h in Headers */,
 				BAF4E3652048229400C12DF6 /* fishhook.h in Headers */,
 				BAF4E36A2048229400C12DF6 /* DingTalkDylib.h in Headers */,
 				BA97716D20527C6F00FEC917 /* DDConfig.h in Headers */,
@@ -451,9 +439,7 @@
 				BA97716E20527C6F00FEC917 /* DDConfig.m in Sources */,
 				BAF4E36C2048229400C12DF6 /* DingTalkDylib.m in Sources */,
 				BA97717420527C6F00FEC917 /* DDEditorTableViewCell.m in Sources */,
-				BAF4E3682048229400C12DF6 /* DingTalkDylib.mm in Sources */,
 				BA97717A20527C6F00FEC917 /* DDViewController.m in Sources */,
-				BA97718120528B1E00FEC917 /* CTBlockDescription.m in Sources */,
 				BA97717820527C6F00FEC917 /* DDSwitchTableViewCell.m in Sources */,
 				BAF4E3602048229400C12DF6 /* AntiAntiDebug.m in Sources */,
 				BAF4E35B2048229400C12DF6 /* MethodTrace.m in Sources */,
