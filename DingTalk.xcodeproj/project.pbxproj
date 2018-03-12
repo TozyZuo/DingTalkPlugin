@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA97716D20527C6F00FEC917 /* DDConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97715B20527C6F00FEC917 /* DDConfig.h */; };
+		BA97716E20527C6F00FEC917 /* DDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97715C20527C6F00FEC917 /* DDConfig.m */; };
+		BA97716F20527C6F00FEC917 /* DingDingPod.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97715D20527C6F00FEC917 /* DingDingPod.h */; };
+		BA97717020527C6F00FEC917 /* DingDingPod.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97715E20527C6F00FEC917 /* DingDingPod.m */; };
+		BA97717120527C6F00FEC917 /* DDRedPacketHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716020527C6F00FEC917 /* DDRedPacketHeader.h */; };
+		BA97717220527C6F00FEC917 /* DDRevokeMessageHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716120527C6F00FEC917 /* DDRevokeMessageHeader.h */; };
+		BA97717320527C6F00FEC917 /* DDEditorTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716320527C6F00FEC917 /* DDEditorTableViewCell.h */; };
+		BA97717420527C6F00FEC917 /* DDEditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716420527C6F00FEC917 /* DDEditorTableViewCell.m */; };
+		BA97717520527C6F00FEC917 /* DDGoNextTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716520527C6F00FEC917 /* DDGoNextTableViewCell.h */; };
+		BA97717620527C6F00FEC917 /* DDGoNextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716620527C6F00FEC917 /* DDGoNextTableViewCell.m */; };
+		BA97717720527C6F00FEC917 /* DDSwitchTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716720527C6F00FEC917 /* DDSwitchTableViewCell.h */; };
+		BA97717820527C6F00FEC917 /* DDSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716820527C6F00FEC917 /* DDSwitchTableViewCell.m */; };
+		BA97717920527C6F00FEC917 /* DDViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716920527C6F00FEC917 /* DDViewController.h */; };
+		BA97717A20527C6F00FEC917 /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716A20527C6F00FEC917 /* DDViewController.m */; };
+		BA97718020528B1E00FEC917 /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97717E20528B1D00FEC917 /* CTBlockDescription.h */; };
+		BA97718120528B1E00FEC917 /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97717F20528B1D00FEC917 /* CTBlockDescription.m */; };
+		BAF4E33D2048229400C12DF6 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF4E33C2048229400C12DF6 /* MethodTraceConfig.plist */; };
+		BAF4E3402048229400C12DF6 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = BAF4E33F2048229400C12DF6 /* put ipa or app here */; };
+		BAF4E3482048229400C12DF6 /* libDingTalkDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAF4E3472048229400C12DF6 /* libDingTalkDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BAF4E34D2048229400C12DF6 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF4E34C2048229400C12DF6 /* JavaScriptCore.framework */; };
+		BAF4E34F2048229400C12DF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF4E34E2048229400C12DF6 /* Foundation.framework */; };
+		BAF4E3512048229400C12DF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF4E3502048229400C12DF6 /* UIKit.framework */; };
+		BAF4E3552048229400C12DF6 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4E3542048229400C12DF6 /* ANYMethodLog.h */; };
+		BAF4E3572048229400C12DF6 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E3562048229400C12DF6 /* ANYMethodLog.m */; };
+		BAF4E3592048229400C12DF6 /* MethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4E3582048229400C12DF6 /* MethodTrace.h */; };
+		BAF4E35B2048229400C12DF6 /* MethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E35A2048229400C12DF6 /* MethodTrace.m */; };
+		BAF4E3602048229400C12DF6 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E35F2048229400C12DF6 /* AntiAntiDebug.m */; };
+		BAF4E3632048229400C12DF6 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E3622048229400C12DF6 /* fishhook.c */; };
+		BAF4E3652048229400C12DF6 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4E3642048229400C12DF6 /* fishhook.h */; };
+		BAF4E3682048229400C12DF6 /* DingTalkDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E3672048229400C12DF6 /* DingTalkDylib.mm */; };
+		BAF4E36A2048229400C12DF6 /* DingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = BAF4E3692048229400C12DF6 /* DingTalkDylib.h */; };
+		BAF4E36C2048229400C12DF6 /* DingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF4E36B2048229400C12DF6 /* DingTalkDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAF4E3492048229400C12DF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF4E32E2048229400C12DF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF4E3462048229400C12DF6;
+			remoteInfo = DingTalkDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAF4E3362048229400C12DF6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BAF4E3482048229400C12DF6 /* libDingTalkDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BA97715B20527C6F00FEC917 /* DDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDConfig.h; sourceTree = "<group>"; };
+		BA97715C20527C6F00FEC917 /* DDConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDConfig.m; sourceTree = "<group>"; };
+		BA97715D20527C6F00FEC917 /* DingDingPod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DingDingPod.h; sourceTree = "<group>"; };
+		BA97715E20527C6F00FEC917 /* DingDingPod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DingDingPod.m; sourceTree = "<group>"; };
+		BA97716020527C6F00FEC917 /* DDRedPacketHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRedPacketHeader.h; sourceTree = "<group>"; };
+		BA97716120527C6F00FEC917 /* DDRevokeMessageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRevokeMessageHeader.h; sourceTree = "<group>"; };
+		BA97716320527C6F00FEC917 /* DDEditorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDEditorTableViewCell.h; sourceTree = "<group>"; };
+		BA97716420527C6F00FEC917 /* DDEditorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDEditorTableViewCell.m; sourceTree = "<group>"; };
+		BA97716520527C6F00FEC917 /* DDGoNextTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGoNextTableViewCell.h; sourceTree = "<group>"; };
+		BA97716620527C6F00FEC917 /* DDGoNextTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGoNextTableViewCell.m; sourceTree = "<group>"; };
+		BA97716720527C6F00FEC917 /* DDSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSwitchTableViewCell.h; sourceTree = "<group>"; };
+		BA97716820527C6F00FEC917 /* DDSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSwitchTableViewCell.m; sourceTree = "<group>"; };
+		BA97716920527C6F00FEC917 /* DDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
+		BA97716A20527C6F00FEC917 /* DDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
+		BA97717D2052877200FEC917 /* DDSettingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSettingHeader.h; sourceTree = "<group>"; };
+		BA97717E20528B1D00FEC917 /* CTBlockDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
+		BA97717F20528B1D00FEC917 /* CTBlockDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTBlockDescription.m; sourceTree = "<group>"; };
+		BAF4E3392048229400C12DF6 /* DingTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF4E33C2048229400C12DF6 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		BAF4E33F2048229400C12DF6 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		BAF4E3412048229400C12DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF4E3472048229400C12DF6 /* libDingTalkDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDingTalkDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF4E34C2048229400C12DF6 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		BAF4E34E2048229400C12DF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BAF4E3502048229400C12DF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BAF4E3542048229400C12DF6 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = MethodTrace/ANYMethodLog.h; sourceTree = "<group>"; };
+		BAF4E3562048229400C12DF6 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = MethodTrace/ANYMethodLog.m; sourceTree = "<group>"; };
+		BAF4E3582048229400C12DF6 /* MethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MethodTrace.h; path = MethodTrace/MethodTrace.h; sourceTree = "<group>"; };
+		BAF4E35A2048229400C12DF6 /* MethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MethodTrace.m; path = MethodTrace/MethodTrace.m; sourceTree = "<group>"; };
+		BAF4E35D2048229400C12DF6 /* DingTalkDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingTalkDylib-Prefix.pch"; sourceTree = "<group>"; };
+		BAF4E35F2048229400C12DF6 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		BAF4E3622048229400C12DF6 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		BAF4E3642048229400C12DF6 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		BAF4E3662048229400C12DF6 /* DingTalkDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DingTalkDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		BAF4E3672048229400C12DF6 /* DingTalkDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DingTalkDylib.mm; sourceTree = "<group>"; };
+		BAF4E3692048229400C12DF6 /* DingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingTalkDylib.h; sourceTree = "<group>"; };
+		BAF4E36B2048229400C12DF6 /* DingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingTalkDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAF4E3332048229400C12DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4E3442048229400C12DF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF4E34D2048229400C12DF6 /* JavaScriptCore.framework in Frameworks */,
+				BAF4E3512048229400C12DF6 /* UIKit.framework in Frameworks */,
+				BAF4E34F2048229400C12DF6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA97710220526B3A00FEC917 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA97717E20528B1D00FEC917 /* CTBlockDescription.h */,
+				BA97717F20528B1D00FEC917 /* CTBlockDescription.m */,
+				BA97715920527C6F00FEC917 /* DingDingPod */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BA97715920527C6F00FEC917 /* DingDingPod */ = {
+			isa = PBXGroup;
+			children = (
+				BA97715A20527C6F00FEC917 /* Config */,
+				BA97715F20527C6F00FEC917 /* Headers */,
+				BA97716220527C6F00FEC917 /* Setting */,
+				BA97715D20527C6F00FEC917 /* DingDingPod.h */,
+				BA97715E20527C6F00FEC917 /* DingDingPod.m */,
+			);
+			path = DingDingPod;
+			sourceTree = "<group>";
+		};
+		BA97715A20527C6F00FEC917 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BA97715B20527C6F00FEC917 /* DDConfig.h */,
+				BA97715C20527C6F00FEC917 /* DDConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		BA97715F20527C6F00FEC917 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				BA97716020527C6F00FEC917 /* DDRedPacketHeader.h */,
+				BA97716120527C6F00FEC917 /* DDRevokeMessageHeader.h */,
+				BA97717D2052877200FEC917 /* DDSettingHeader.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		BA97716220527C6F00FEC917 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BA97716320527C6F00FEC917 /* DDEditorTableViewCell.h */,
+				BA97716420527C6F00FEC917 /* DDEditorTableViewCell.m */,
+				BA97716520527C6F00FEC917 /* DDGoNextTableViewCell.h */,
+				BA97716620527C6F00FEC917 /* DDGoNextTableViewCell.m */,
+				BA97716720527C6F00FEC917 /* DDSwitchTableViewCell.h */,
+				BA97716820527C6F00FEC917 /* DDSwitchTableViewCell.m */,
+				BA97716920527C6F00FEC917 /* DDViewController.h */,
+				BA97716A20527C6F00FEC917 /* DDViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		BAF4E32D2048229400C12DF6 = {
+			isa = PBXGroup;
+			children = (
+				BA97710220526B3A00FEC917 /* Pods */,
+				BAF4E33B2048229400C12DF6 /* DingTalk */,
+				BAF4E3522048229400C12DF6 /* DingTalkDylib */,
+				BAF4E34B2048229400C12DF6 /* Frameworks */,
+				BAF4E33A2048229400C12DF6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF4E33A2048229400C12DF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E3392048229400C12DF6 /* DingTalk.app */,
+				BAF4E3472048229400C12DF6 /* libDingTalkDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF4E33B2048229400C12DF6 /* DingTalk */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E33C2048229400C12DF6 /* MethodTraceConfig.plist */,
+				BAF4E3412048229400C12DF6 /* Info.plist */,
+				BAF4E33E2048229400C12DF6 /* TargetApp */,
+			);
+			path = DingTalk;
+			sourceTree = "<group>";
+		};
+		BAF4E33E2048229400C12DF6 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E33F2048229400C12DF6 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		BAF4E34B2048229400C12DF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E34C2048229400C12DF6 /* JavaScriptCore.framework */,
+				BAF4E34E2048229400C12DF6 /* Foundation.framework */,
+				BAF4E3502048229400C12DF6 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAF4E3522048229400C12DF6 /* DingTalkDylib */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E3662048229400C12DF6 /* DingTalkDylib.xm */,
+				BAF4E3672048229400C12DF6 /* DingTalkDylib.mm */,
+				BAF4E3692048229400C12DF6 /* DingTalkDylib.h */,
+				BAF4E36B2048229400C12DF6 /* DingTalkDylib.m */,
+				BAF4E3532048229400C12DF6 /* MethodTrace */,
+				BAF4E35E2048229400C12DF6 /* AntiAntiDebug */,
+				BAF4E3612048229400C12DF6 /* fishhook */,
+				BAF4E35C2048229400C12DF6 /* Supporting Files */,
+			);
+			path = DingTalkDylib;
+			sourceTree = "<group>";
+		};
+		BAF4E3532048229400C12DF6 /* MethodTrace */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E3542048229400C12DF6 /* ANYMethodLog.h */,
+				BAF4E3562048229400C12DF6 /* ANYMethodLog.m */,
+				BAF4E3582048229400C12DF6 /* MethodTrace.h */,
+				BAF4E35A2048229400C12DF6 /* MethodTrace.m */,
+			);
+			name = MethodTrace;
+			sourceTree = "<group>";
+		};
+		BAF4E35C2048229400C12DF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E35D2048229400C12DF6 /* DingTalkDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAF4E35E2048229400C12DF6 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E35F2048229400C12DF6 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		BAF4E3612048229400C12DF6 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				BAF4E3622048229400C12DF6 /* fishhook.c */,
+				BAF4E3642048229400C12DF6 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BAF4E3452048229400C12DF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA97717120527C6F00FEC917 /* DDRedPacketHeader.h in Headers */,
+				BA97717520527C6F00FEC917 /* DDGoNextTableViewCell.h in Headers */,
+				BA97716F20527C6F00FEC917 /* DingDingPod.h in Headers */,
+				BA97717920527C6F00FEC917 /* DDViewController.h in Headers */,
+				BA97717720527C6F00FEC917 /* DDSwitchTableViewCell.h in Headers */,
+				BAF4E3552048229400C12DF6 /* ANYMethodLog.h in Headers */,
+				BAF4E3592048229400C12DF6 /* MethodTrace.h in Headers */,
+				BA97718020528B1E00FEC917 /* CTBlockDescription.h in Headers */,
+				BAF4E3652048229400C12DF6 /* fishhook.h in Headers */,
+				BAF4E36A2048229400C12DF6 /* DingTalkDylib.h in Headers */,
+				BA97716D20527C6F00FEC917 /* DDConfig.h in Headers */,
+				BA97717220527C6F00FEC917 /* DDRevokeMessageHeader.h in Headers */,
+				BA97717320527C6F00FEC917 /* DDEditorTableViewCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BAF4E3382048229400C12DF6 /* DingTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF4E3722048229400C12DF6 /* Build configuration list for PBXNativeTarget "DingTalk" */;
+			buildPhases = (
+				BAF4E3322048229400C12DF6 /* Sources */,
+				BAF4E3332048229400C12DF6 /* Frameworks */,
+				BAF4E3342048229400C12DF6 /* ShellScript */,
+				BAF4E3352048229400C12DF6 /* Resources */,
+				BAF4E3362048229400C12DF6 /* CopyFiles */,
+				BAF4E3372048229400C12DF6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF4E34A2048229400C12DF6 /* PBXTargetDependency */,
+			);
+			name = DingTalk;
+			productName = DingTalk;
+			productReference = BAF4E3392048229400C12DF6 /* DingTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAF4E3462048229400C12DF6 /* DingTalkDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF4E36F2048229400C12DF6 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */;
+			buildPhases = (
+				BAF4E3422048229400C12DF6 /* ShellScript */,
+				BAF4E3432048229400C12DF6 /* Sources */,
+				BAF4E3442048229400C12DF6 /* Frameworks */,
+				BAF4E3452048229400C12DF6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DingTalkDylib;
+			productName = DingTalkDylib;
+			productReference = BAF4E3472048229400C12DF6 /* libDingTalkDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAF4E32E2048229400C12DF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = TozyZuo;
+				TargetAttributes = {
+					BAF4E3382048229400C12DF6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					BAF4E3462048229400C12DF6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BAF4E3312048229400C12DF6 /* Build configuration list for PBXProject "DingTalk" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BAF4E32D2048229400C12DF6;
+			productRefGroup = BAF4E33A2048229400C12DF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAF4E3382048229400C12DF6 /* DingTalk */,
+				BAF4E3462048229400C12DF6 /* DingTalkDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAF4E3352048229400C12DF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF4E3402048229400C12DF6 /* put ipa or app here in Resources */,
+				BAF4E33D2048229400C12DF6 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAF4E3342048229400C12DF6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		BAF4E3372048229400C12DF6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		BAF4E3422048229400C12DF6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAF4E3322048229400C12DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF4E3432048229400C12DF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA97716E20527C6F00FEC917 /* DDConfig.m in Sources */,
+				BAF4E36C2048229400C12DF6 /* DingTalkDylib.m in Sources */,
+				BA97717420527C6F00FEC917 /* DDEditorTableViewCell.m in Sources */,
+				BAF4E3682048229400C12DF6 /* DingTalkDylib.mm in Sources */,
+				BA97717A20527C6F00FEC917 /* DDViewController.m in Sources */,
+				BA97718120528B1E00FEC917 /* CTBlockDescription.m in Sources */,
+				BA97717820527C6F00FEC917 /* DDSwitchTableViewCell.m in Sources */,
+				BAF4E3602048229400C12DF6 /* AntiAntiDebug.m in Sources */,
+				BAF4E35B2048229400C12DF6 /* MethodTrace.m in Sources */,
+				BA97717620527C6F00FEC917 /* DDGoNextTableViewCell.m in Sources */,
+				BAF4E3632048229400C12DF6 /* fishhook.c in Sources */,
+				BAF4E3572048229400C12DF6 /* ANYMethodLog.m in Sources */,
+				BA97717020527C6F00FEC917 /* DingDingPod.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAF4E34A2048229400C12DF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF4E3462048229400C12DF6 /* DingTalkDylib */;
+			targetProxy = BAF4E3492048229400C12DF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BAF4E36D2048229400C12DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BAF4E36E2048229400C12DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAF4E3702048229400C12DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6D9Z3495Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDingTalkDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DingTalkDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+					"-framework",
+					Cycript,
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		BAF4E3712048229400C12DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = H6D9Z3495Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkDylib/DingTalkDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libDingTalkDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"DingTalkDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-lsubstrate",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAF4E3732048229400C12DF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lian Huang (S637WR4AMH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FN4JQB9U5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DingTalk/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAF4E3742048229400C12DF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8FN4JQB9U5;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = DingTalk/Info.plist;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laiwang.DingTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAF4E3312048229400C12DF6 /* Build configuration list for PBXProject "DingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF4E36D2048229400C12DF6 /* Debug */,
+				BAF4E36E2048229400C12DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF4E36F2048229400C12DF6 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF4E3702048229400C12DF6 /* Debug */,
+				BAF4E3712048229400C12DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF4E3722048229400C12DF6 /* Build configuration list for PBXNativeTarget "DingTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF4E3732048229400C12DF6 /* Debug */,
+				BAF4E3742048229400C12DF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAF4E32E2048229400C12DF6 /* Project object */;
+}
