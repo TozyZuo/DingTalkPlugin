@@ -21,6 +21,8 @@
 		BA97717820527C6F00FEC917 /* DDSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716820527C6F00FEC917 /* DDSwitchTableViewCell.m */; };
 		BA97717920527C6F00FEC917 /* DDViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716920527C6F00FEC917 /* DDViewController.h */; };
 		BA97717A20527C6F00FEC917 /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716A20527C6F00FEC917 /* DDViewController.m */; };
+		BAE1E65D206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE1E65B206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.h */; };
+		BAE1E65E206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE1E65C206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		BAF4E33D2048229400C12DF6 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF4E33C2048229400C12DF6 /* MethodTraceConfig.plist */; };
 		BAF4E3402048229400C12DF6 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = BAF4E33F2048229400C12DF6 /* put ipa or app here */; };
 		BAF4E3482048229400C12DF6 /* libDingTalkDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAF4E3472048229400C12DF6 /* libDingTalkDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -77,6 +79,8 @@
 		BA97716920527C6F00FEC917 /* DDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
 		BA97716A20527C6F00FEC917 /* DDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
 		BA97717D2052877200FEC917 /* DDSettingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSettingHeader.h; sourceTree = "<group>"; };
+		BAE1E65B206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		BAE1E65C206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		BAF4E3392048229400C12DF6 /* DingTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF4E33C2048229400C12DF6 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
 		BAF4E33F2048229400C12DF6 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
@@ -172,6 +176,15 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		BAE1E65A206B3DD600013823 /* forkingdog */ = {
+			isa = PBXGroup;
+			children = (
+				BAE1E65B206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.h */,
+				BAE1E65C206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = forkingdog;
+			sourceTree = "<group>";
+		};
 		BAF4E32D2048229400C12DF6 = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +236,7 @@
 		BAF4E3522048229400C12DF6 /* DingTalkDylib */ = {
 			isa = PBXGroup;
 			children = (
+				BAE1E65A206B3DD600013823 /* forkingdog */,
 				BAF4E3692048229400C12DF6 /* DingTalkDylib.h */,
 				BAF4E36B2048229400C12DF6 /* DingTalkDylib.m */,
 				BAF4E3532048229400C12DF6 /* MethodTrace */,
@@ -282,6 +296,7 @@
 				BA97717920527C6F00FEC917 /* DDViewController.h in Headers */,
 				BA97717720527C6F00FEC917 /* DDSwitchTableViewCell.h in Headers */,
 				BAF4E3552048229400C12DF6 /* ANYMethodLog.h in Headers */,
+				BAE1E65D206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.h in Headers */,
 				BAF4E3592048229400C12DF6 /* MethodTrace.h in Headers */,
 				BAF4E3652048229400C12DF6 /* fishhook.h in Headers */,
 				BAF4E36A2048229400C12DF6 /* DingTalkDylib.h in Headers */,
@@ -442,6 +457,7 @@
 				BA97717A20527C6F00FEC917 /* DDViewController.m in Sources */,
 				BA97717820527C6F00FEC917 /* DDSwitchTableViewCell.m in Sources */,
 				BAF4E3602048229400C12DF6 /* AntiAntiDebug.m in Sources */,
+				BAE1E65E206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				BAF4E35B2048229400C12DF6 /* MethodTrace.m in Sources */,
 				BA97717620527C6F00FEC917 /* DDGoNextTableViewCell.m in Sources */,
 				BAF4E3632048229400C12DF6 /* fishhook.c in Sources */,
