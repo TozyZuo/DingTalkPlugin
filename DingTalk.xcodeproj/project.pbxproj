@@ -21,6 +21,13 @@
 		BA97717820527C6F00FEC917 /* DDSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716820527C6F00FEC917 /* DDSwitchTableViewCell.m */; };
 		BA97717920527C6F00FEC917 /* DDViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BA97716920527C6F00FEC917 /* DDViewController.h */; };
 		BA97717A20527C6F00FEC917 /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716A20527C6F00FEC917 /* DDViewController.m */; };
+		BA9C3AD5213F80FD00AFE398 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF4E34E2048229400C12DF6 /* Foundation.framework */; };
+		BA9C3AE6213F828900AFE398 /* DDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97715C20527C6F00FEC917 /* DDConfig.m */; };
+		BA9C3AEB213F828900AFE398 /* DDEditorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716420527C6F00FEC917 /* DDEditorTableViewCell.m */; };
+		BA9C3AED213F828900AFE398 /* DDGoNextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716620527C6F00FEC917 /* DDGoNextTableViewCell.m */; };
+		BA9C3AEF213F828900AFE398 /* DDSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716820527C6F00FEC917 /* DDSwitchTableViewCell.m */; };
+		BA9C3AF1213F828900AFE398 /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97716A20527C6F00FEC917 /* DDViewController.m */; };
+		BA9C3AF3213F828900AFE398 /* DingDingPod.m in Sources */ = {isa = PBXBuildFile; fileRef = BA97715E20527C6F00FEC917 /* DingDingPod.m */; };
 		BAE1E65D206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE1E65B206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.h */; };
 		BAE1E65E206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE1E65C206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		BAF4E33D2048229400C12DF6 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF4E33C2048229400C12DF6 /* MethodTraceConfig.plist */; };
@@ -79,6 +86,10 @@
 		BA97716920527C6F00FEC917 /* DDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
 		BA97716A20527C6F00FEC917 /* DDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
 		BA97717D2052877200FEC917 /* DDSettingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDSettingHeader.h; sourceTree = "<group>"; };
+		BA9C3AD4213F80FD00AFE398 /* DingTalkTweak.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = DingTalkTweak.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9C3AD9213F80FD00AFE398 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		BA9C3ADB213F80FD00AFE398 /* DingTalkTweak-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingTalkTweak-Prefix.pch"; sourceTree = "<group>"; };
+		BA9C3AE1213F80FD00AFE398 /* DingTalkTweak.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = DingTalkTweak.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/DingTalkTweak.plist; sourceTree = "<group>"; };
 		BAE1E65B206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		BAE1E65C206B3DD600013823 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		BAF4E3392048229400C12DF6 /* DingTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +113,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BA9C3AD0213F80FD00AFE398 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9C3AD5213F80FD00AFE398 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAF4E3332048229400C12DF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,6 +195,64 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		BA9C3AD6213F80FD00AFE398 /* DingTalkTweak */ = {
+			isa = PBXGroup;
+			children = (
+				BA9C3AD7213F80FD00AFE398 /* Package */,
+				BA9C3ADA213F80FD00AFE398 /* Supporting Files */,
+			);
+			path = DingTalkTweak;
+			sourceTree = "<group>";
+		};
+		BA9C3AD7213F80FD00AFE398 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				BA9C3AD8213F80FD00AFE398 /* DEBIAN */,
+				BA9C3ADE213F80FD00AFE398 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		BA9C3AD8213F80FD00AFE398 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				BA9C3AD9213F80FD00AFE398 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		BA9C3ADA213F80FD00AFE398 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA9C3ADB213F80FD00AFE398 /* DingTalkTweak-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA9C3ADE213F80FD00AFE398 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				BA9C3ADF213F80FD00AFE398 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		BA9C3ADF213F80FD00AFE398 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				BA9C3AE0213F80FD00AFE398 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		BA9C3AE0213F80FD00AFE398 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				BA9C3AE1213F80FD00AFE398 /* DingTalkTweak.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
 		BAE1E65A206B3DD600013823 /* forkingdog */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +268,7 @@
 				BA97710220526B3A00FEC917 /* Pods */,
 				BAF4E33B2048229400C12DF6 /* DingTalk */,
 				BAF4E3522048229400C12DF6 /* DingTalkDylib */,
+				BA9C3AD6213F80FD00AFE398 /* DingTalkTweak */,
 				BAF4E34B2048229400C12DF6 /* Frameworks */,
 				BAF4E33A2048229400C12DF6 /* Products */,
 			);
@@ -201,6 +279,7 @@
 			children = (
 				BAF4E3392048229400C12DF6 /* DingTalk.app */,
 				BAF4E3472048229400C12DF6 /* libDingTalkDylib.dylib */,
+				BA9C3AD4213F80FD00AFE398 /* DingTalkTweak.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,6 +365,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BA9C3AD1213F80FD00AFE398 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAF4E3452048229400C12DF6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,6 +395,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BA9C3AD3213F80FD00AFE398 /* DingTalkTweak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9C3AE2213F80FD00AFE398 /* Build configuration list for PBXNativeTarget "DingTalkTweak" */;
+			buildPhases = (
+				BA9C3ACF213F80FD00AFE398 /* Sources */,
+				BA9C3AD0213F80FD00AFE398 /* Frameworks */,
+				BA9C3AD1213F80FD00AFE398 /* Headers */,
+				BA9C3AD2213F80FD00AFE398 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DingTalkTweak;
+			productName = DingTalkTweak;
+			productReference = BA9C3AD4213F80FD00AFE398 /* DingTalkTweak.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		BAF4E3382048229400C12DF6 /* DingTalk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAF4E3722048229400C12DF6 /* Build configuration list for PBXNativeTarget "DingTalk" */;
@@ -354,9 +458,14 @@
 		BAF4E32E2048229400C12DF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = TozyZuo;
 				TargetAttributes = {
+					BA9C3AD3213F80FD00AFE398 = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+					};
 					BAF4E3382048229400C12DF6 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -381,6 +490,7 @@
 			targets = (
 				BAF4E3382048229400C12DF6 /* DingTalk */,
 				BAF4E3462048229400C12DF6 /* DingTalkDylib */,
+				BA9C3AD3213F80FD00AFE398 /* DingTalkTweak */,
 			);
 		};
 /* End PBXProject section */
@@ -398,6 +508,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BA9C3AD2213F80FD00AFE398 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp\n";
+		};
 		BAF4E3342048229400C12DF6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,6 +567,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BA9C3ACF213F80FD00AFE398 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9C3AE6213F828900AFE398 /* DDConfig.m in Sources */,
+				BA9C3AEB213F828900AFE398 /* DDEditorTableViewCell.m in Sources */,
+				BA9C3AED213F828900AFE398 /* DDGoNextTableViewCell.m in Sources */,
+				BA9C3AEF213F828900AFE398 /* DDSwitchTableViewCell.m in Sources */,
+				BA9C3AF1213F828900AFE398 /* DDViewController.m in Sources */,
+				BA9C3AF3213F828900AFE398 /* DingDingPod.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAF4E3322048229400C12DF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,6 +617,87 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		BA9C3AE3213F80FD00AFE398 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H6D9Z3495Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkTweak/DingTalkTweak-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"DingTalkTweak\\\"\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		BA9C3AE4213F80FD00AFE398 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = H6D9Z3495Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingTalkTweak/DingTalkTweak-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = 2222;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"DingTalkTweak\\\"\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BAF4E36D2048229400C12DF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -735,6 +956,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA9C3AE2213F80FD00AFE398 /* Build configuration list for PBXNativeTarget "DingTalkTweak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9C3AE3213F80FD00AFE398 /* Debug */,
+				BA9C3AE4213F80FD00AFE398 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BAF4E3312048229400C12DF6 /* Build configuration list for PBXProject "DingTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
